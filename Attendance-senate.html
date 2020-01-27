@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Attendance-House!</title>
+</head>
+
+<body>
+    <div class="centerlouad">
+
+        <div id="circulado" class="spinner-grow" style="width: 20rem; height: 20rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="container-fluid pading">
+            <div class="row">
+                <div class="col-8">
+                    <img class="img-top" height="200px" width="500pix" src="./img/LOGOTGIF.jpg" alt="">
+                </div>
+                <div class="col-2">
+
+                </div>
+                <div class="col-2 mt-5 ">
+                    <img src="./img/images.png" height="25pix" width="25pix" alt=""> <a
+                        href="mailto:berenguer.pou@gmail.com">info@tgif.net</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-light  ">
+            <div class="border rounded container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item  pr-5">
+                            <a class="nav-link" href="./Home.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item dropdown pr-5">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Congress113
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./Congress-House.html">House</a>
+                                <a class="dropdown-item" href="./Congress-senate-data.html">senate</a>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item dropdown pr-5 active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Attendance
+                            </a>
+                            <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./Attendance-House.html">House</a>
+                                <a class="dropdown-item active" href="./Attendance-senate.html">senate</a>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item dropdown pr-5">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Party Loyalty
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./Party Loyalty-House.html">House</a>
+                                <a class="dropdown-item" href="./Party Loyalty-senate.html">senate</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section>
+        <div class=" container-fluid">
+            <div class="row ">
+                <div class="col-6">
+                    <h1>ATTENDANCE</h1>
+                    <p>The Constitution specifies that a majority of members constitutes a quorum to do business in each
+                        house. Representatives and senators rarely force the presence of a quorum by demanding quorum
+                        calls; thus, in most cases, debates continue even if a majority is not present.
+
+                        The Senate uses roll-call votes; a clerk calls out the names of all the senators, each senator
+                        stating "aye" or "no" when his or her name is announced. The House reserves roll-call votes for
+                        the most formal matters, as a roll-call of all 435 representatives takes quite some time;
+                        normally, members vote by electronic device. In the case of a tie, the motion in question fails.
+                        In the Senate, the Vice President may (if present) cast the tiebreaking vote.</p>
+                </div>
+
+
+
+                <div class="col-6">
+                    <h2 class="border p-3 text-center text-secondary rounded mt-5">Senate at a glance</h2>
+
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Party</th>
+                                <th scope="col">Nº of Reps</th>
+                                <th scope="col">% Voted w/ Party</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row ">Democrats</th>
+                                <td id="n_of_Reps_Democrats"></td>
+                                <td id="pct_Democrats"></td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row ">Republicans</th>
+                                <td id="n_of_Reps_Republicans"></td>
+                                <td id="pct_Republicans"></td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row ">Independents</th>
+                                <td id="n_of_Reps_Independets"></td>
+                                <td id="pct_Independets"></td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row">Total</th>
+                                <td id="total"></td>
+                                <td id="pct_total"></td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section>
+
+        <div class=" container-fluid mt-5">
+            <div class="row border rounded pt-3 pb-4">
+                <div class="col-6 scrol-tabla-congreso ">
+
+                    <h3 class="border p-3 text-center text-secondary rounded ">Least Engaged (Bottom 10% Attendance)
+                    </h3>
+
+                    <table class="table table-hover ">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+
+                                <th scope="col">Nº of Missed Votes</th>
+
+                                <th scope="col">% Missed</th>
+                            </tr>
+                        </thead>
+                        <tbody id="Attendance_LeastEngaged">
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="col-6 scrol-tabla-congreso ">
+
+                    <h3 class="border p-3 text-center text-secondary rounded ">Most Engaged (Top 10% Attendance)</h3>
+
+
+                    <table class="table table-hover ">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+
+                                <th scope="col">Nº of Missed Votes</th>
+
+                                <th scope="col">% Missed</th>
+                            </tr>
+                        </thead>
+                        <tbody id="Attendance_MostEngaged">
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <footer id="sticky-footer" class="container-fluid  text-white-50 padding-footer-top ">
+        <div class=" text-center py-4 bg-dark border rounded ">
+            <small>Copyright &copy; </small>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+
+    <script src="./js/Attendance.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+
+
+
+body{
+    font-weight: 300;
+
+}
+h1 ,h2 ,h3{
+    font-weight: 300;
+}
+
+
+.img-top {
+    width: "20px";
+}
+.container-fluid {
+    padding-right: 8%;
+    padding-left: 8%;
+}
+.padding-footer-top{
+    padding-top: 4rem;
+}
+
+
+
+/***************************** CONGRESEE - HOUSE ***************************/
+
+
+.form-check-input {
+    margin-left: -0.1rem;
+}
+.form-check-label {
+    margin-left: 1.3rem;
+}
+.input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle), .input-group>.input-group-append:last-child>.input-group-text:not(:last-child), .input-group>.input-group-append:not(:last-child)>.btn, .input-group>.input-group-append:not(:last-child)>.input-group-text, .input-group>.input-group-prepend>.btn, .input-group>.input-group-prepend>.input-group-text {
+    border-radius: 6px;
+}
+
+
+
+.scrol-tabla-congreso {
+    
+    height: 50rem;
+    width: 10rem ; 
+    overflow-y: auto;
+}
+/************************** CONGRESEE - SENATE ***************************/
+
+
+
+
+
+
+
+
+/*********************** Attendance- HOUSE ***************************/
+
+
+.scrol-tabla-Attendance {
+   
+    height: 50rem;
+    width: 10rem ; 
+    overflow-y: auto;
+}
+
+
+/*********************** Attendance-SENATE ***************************/
+
+
+.spinner-grow{
+    position: fixed;
+    top: 35%;
+    left: 36%;
+    
+}
+
+
+
+
+/*********************** Party Loyalty- HOUSE ***************************/
+p {
+    
+    padding-top: 1.2rem;
+    line-height: 2;
+}
+
+h1{
+    padding-top: 1.8rem;
+}
+
+
+/*********************** Party Loyalty-SENATE ***************************/
